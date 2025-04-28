@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.list-item{
+    list-style: none;
+    text-decoration-line: none;
+    margin: 20px;
+    margin: 20px;
+    border: 2px solid ;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+.list-item:hover {
+    color: rgb(183, 44, 12);
+    background-color: black;
+    
+}
+
+.list-item:focus{
+    color: darkblue;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: rgb(7, 103, 182);
+}
+
+.container{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    
+}
+
+.images{
+    width: 100%;
+    display: inline-block;
+}
+
+#main-image{
+    padding-left: 20%;
+}
+
+#journey {
+    width: 60%;
+    display: inline-block;
+    
+}
+
+#facts{
+    border: 3px solid darkgray;
+    border-radius: 5px;
+    padding: 15px;
+    display: inline-block;
+    width: 20%;
+    
+    
+}
+
+footer{
+    text-align: center;
+}
+

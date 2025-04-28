@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How The Internet works">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        *{
+            background-color: rgb(206, 206, 206);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> How does the Internet Work</h1>
+        <nav>
+            <ul class="nav"> 
+                <li class="list-item"><a href="#what-is-internet">Internet</a> </li>
+                <li class="list-item"><a href="#client">Client</a> </li>
+                <li class="list-item"><a href="#server">Server</a> </li>
+                <li class="list-item"><a href="#facts">Facts</a> </li>
+                <li class="list-item"><a href="#journey">The Journey of a Web request</a> </li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220602145532/HowDoesitWorkWhenYouGoogleFromaWebBrowser.png" alt="how internet works" id="main-image">
+        
+        <h2 >Internet and its components</h2>
+        <h4 id="what-is-internet">What is Internet ?</h4>
+        <p>The internet is a global network of interconnected computers and devices that communicate with each other to share information, resources, and services. Think of it as a massive web of connections that allows people and machines to exchange data instantly, no matter where they are in the world. From sending emails and browsing websites to streaming videos and playing online games, the internet powers nearly every aspect of modern life.The Internet connects over 4.5 billion users and 1.8 billion websites through standard protocols like TCP/IP. Information is divided into packets that travel through routers and switches, typically taking 20 to 200 milliseconds for a round trip. Each device on the Internet has a unique Internet Protocol (IP) address, with IPv4 supporting just over 4.3 billion addresses. To address this limitation, IPv6 was introduced, providing a vast address space for future devices.</p>
+
+        <h4>What Are The Components of the Internet?</h4>
+        <ul>
+            <li>Packets</li>
+            <li>Protocols</li>
+        </ul>
+        <p>In networking, the data that is being transmitted through the internet is sent via small segments/chunks which are later translated into bits, and the packets get routed to their endpoint (destination) through different networking devices i.e. routers or switches.
+
+            Later, once the packet arrives at the receiver’s end, that small chunks of data get reassembled to utilize or check the data that he/she requested. That’s why they are used to push ease in networking and large data can be easily sent by sending small units and this whole process of sending/receiving small bits is known as Packet Switching.</p>
+        
+    </section>
+
+    <section class="container">
+        <h2> Web Glossary </h2>
+        <p> Before going into client-server Communication , We need to know what are clients and what are servers . So let dive into it .</p>
+
+        <h4 id="client">What is a Client ?</h4>
+        <p>A client is the hardware or software that accesses a service on a server. The term “client” may refer to a person using the service, or a piece of software (like a Web browser) or hardware (like a phone or computer) the person is using to access the service.</p>
+
+        <h4 id="server">What is a Server ?</h4>
+        <p>A server is a computer that hosts web pages, making them accessible online. When a user loads a site, the web server will retrieve the relevant files and send them to the browser so the user can interact with them.</p>
+
+        <h5>Some more terms to know</h5>
+
+        <ul>
+            <li>HTTP: The base of the Internet starts from HTTP (Hypertext Transfer Protocol) and is being used to communicate all over (World Wide Web) WWW. The concept of HTTP is to provide data over the Internet (image, video, text, etc.) and the moment a user opens their web browser, they’re connecting to the Internet and establishing an HTTP connection. The foundation of HTTP began in the ’90s by Tim Berners-Lee which runs on top of the TCP/IP network.</li>
+            <li>TCP/IP: It is a variety of internet protocols (TCP/IP) for communicating between a sender and a receiver. TCP (Transmission Control Protocol) / IP (Internet Protocol) ensures that all users who are connected to the internet have their own unique identity known as IP Address. However, how data will flow into what segments (packets) is being decided by TCP. It divides the whole message into small packets and reassembles them before it reaches the receiver.</li>
+            <li>DNS Query: They act as a directory in the web browser. When you’re looking for any specific domain, let’s say www.geeksforgeeks.org So here, your browser doesn’t know this address, and for that, it will start looking out for validation and a request will be sent to the server. Once the identity is confirmed from the database, you’ll get to see the results on your system.</li>
+            <li>Handshaking (TCP & TLS): When two systems connect via a router, the process of determining protocols, speed, compression, and error correction during that particular session is simply called handshaking between networking devices. In this, establishing a connection with that IP is what we call TCP handshaking whereas, it is also mandated to keep your system safe so that no attackers can read those data packets and for that, encryption is being created which is known as TLS handshake.</li>
+            <li>HTTP (Request & Response): When you request any page from the browser, take an example of www.geeksforgeeks.org here, so when you send a request to read the article “ How does the Internet work?” then the server pushes the content to the form of CSS, HTML, and JavaScript and same will get distributed in small data packets. The moment your system receives those packets, your browser will start interpreting those packets, and the whole article will appear on your screen. (It might sound typical, but won’t take more than 3 seconds)</li>
+        </ul>
+
+        
+    </section>
+
+    <article class="container" id="journey">
+        <h2 id="journey">The Journey of a Web request</h2>
+        <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2021/11/how-web-server-works.png" alt="Client server request image" class="images">
+        <h4>How Client & Server Communicate</h4>
+        <p>Web and application servers follow a client-server model. In this structure, one program – the client – requests a resource or service from another program – the server.</p>
+
+        <p>Web servers use Hypertext Transfer Protocol (HTTP) when responding to user requests via the World Wide Web. HTTP is a protocol used to exchange information between computers.Through the HTTP request process, servers can deliver the site’s HTML document to the user’s web browser, like Google Chrome.</p>
+
+        <p>Here’s an overview of the whole process to give you a better understanding:</p>
+
+        <ol>
+
+            <li>When someone wants to load a website, the browser will look for the web server hosting the site’s files.</li>
+            <li>To achieve this, the web browser translates the site’s domain name into an IP address via the Domain Name System (DNS). If the site is frequently visited, the web browser will search through its file cache.</li>
+            <li>After finding the corresponding web server, the browser sends an HTTP request to retrieve site content.</li>
+            <li>The web server receives and processes the HTTP request through its HTTP server. Once the HTTP server accepts the request, it will search through the database to obtain the relevant data.</li>
+            <li>Finally, the server returns the files to the web browser and delivers them to users.</li>
+        </ol>
+
+    </article>
+
+    <aside id="facts" >
+        <h4>Quicks Facts</h4>
+        <blockquote>
+            In 1969 the first message was sent over ARPANET between two computers at UCLA and Stanford. The message was supposed to be “LOGIN,” but the system crashed after “LO.”
+        </blockquote>
+        <blockquote>
+            In 1971 the first email was sent by Ray Tomlinson, who also introduced the “@” symbol to separate the user’s name from the computer’s name.
+        </blockquote>
+        <blockquote>
+            In 1989 Tim Berners-Lee, a British scientist, invented the WWW while working at CERN. He created the first web browser, web server, and HTML (Hypertext Markup Language).
+        </blockquote>
+        <blockquote>
+            In the year 1998 Google was founded, revolutionizing how people search for information online.
+        </blockquote>
+    </aside>
+
+
+    <h4>How much you Learn ?</h4>
+    <form action="#" class="container">
+        <ol>
+            <li>
+                <fieldset>
+                    <legend>Who sent first Email ?</legend>
+                  
+                    <div>
+                      <input type="radio" id="Brenden Eich" name="first" value="Brenden Eich" checked />
+                      <label for="Brenden Eich">Brenden Eich</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="Ray Tomlinson" name="first" value="Ray Tomlinson" />
+                      <label for="Ray Tomlinson">Ray Tomlinson</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="Elon Musk" name="first" value="Elon Musk" />
+                      <label for="Elon Musk">Elon Musk</label>
+                    </div>
+                  </fieldset>
+            </li>
+            <br>
+            <li>
+                <fieldset>
+                    <legend>First message sent over ARPANET was ?</legend>
+                  
+                    <div>
+                      <input type="radio" id="Hello" name="second" value="Hello" checked />
+                      <label for="Hello">Hello</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="Good Morning" name="second" value="Good Morning" />
+                      <label for="Good Morning">Good Morning</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="LOGIN" name="second" value="LOGIN" />
+                      <label for="LOGIN">LOGIN</label>
+                    </div>
+                  </fieldset>
+            </li>
+           
+        </ol>
+
+        <input type="submit" value="submit">        
+    </form>
+
+    <footer>
+
+        <p>Credit goes to No-one , i collected this material from different platforms</p>
+
+        <p>To know more about this , feel free to visit <a href="https://www.geeksforgeeks.org/how-does-the-internet-work/">geeksforgeeks</a> & <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works"> MDN </a></p>
+
+    </footer>
+    
+</body>
+</html>
