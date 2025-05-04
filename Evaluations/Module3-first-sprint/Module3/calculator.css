@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    /* padding: 50px; */
+    background-color: bisque;
+    text-align: center;
+}
+
+h1{
+    font-size: 74px;
+    padding-top: 100px;
+}
+.grid-container{
+    justify-self: center;
+    margin: 100px;
+    background-color: cornsilk;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 20px solid lightsteelblue;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+.numbers{
+    
+}
+.grid-items{
+    margin: 5px;
+    border: 5px solid gainsboro;
+    background-color: white;
+    text-align: center;
+    height: 50px;
+    align-content: center;
+}
+.grid-items:hover{
+    background-color: burlywood;
+}
+
+#screen{
+    background-color: white;
+    border: 5px solid gainsboro;
+    grid-column: 1/5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 100px;
+}
+
+#screen:hover{
+    background-color: palegoldenrod;
+}
+
+#plus{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+#plus:hover{
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: darkgrey;
+}
+
+#minus{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+#minus:hover{
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: darkgrey;
+}
+
+#multiply{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+#multiply:hover{
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: darkgrey;
+}
+
+#C{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+#C:hover{
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: darkgrey;
+}
+
+#equal{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+#equal:hover{
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: darkgrey;
+    
+}
+#slash{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+#slash:hover{
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: darkgrey;
+}
+
+.footer{
+    grid-column: span 4;
+    margin: 10px;
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+p:hover{
+    background-color:  pink;
+    color: white;
+}
