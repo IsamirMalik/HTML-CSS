@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+header{
+    font-size: 62px;
+    text-align: center;
+    background-color: grey;
+    width: 100%;
+    
+    
+}
+
+ul{
+    list-style: none;
+    
+}
+
+
+.navigation{
+    margin: 0;
+    position: sticky;
+    top: 0;
+    height: 5vh;
+    width: 100vw;
+    justify-content: center;
+    background-color: grey;
+    gap: 5vw;
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    margin-top: .01rem;
+}
+
+.breaking-news div > img{
+  border: 1px solid;
+  border-radius: .2rem;
+  width: 5rem;
+  
+}
+
+h5{
+  margin: 1em;
+  margin-bottom: 0;
+  display: flex;
+  
+}
+
+.breaking-news{
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    margin: 1rem;  
+    display: flex;
+    gap : 10%;
+    margin-top: .1rem;
+    flex-wrap: wrap ;
+    
+}
+
+.bn-item{
+    height: 70%;
+    margin: 2%;
+    text-align: center;
+}
+
+.bn-item p{
+    margin: .1em;
+}
+
+img{
+    width: 400px;
+}
+
+.news-article{
+    width: 60vw;
+    margin: 2rem;
+    text-align: center;
+  
+}
+
+.news-article img{
+    width: 100%;
+}
+
+.news-article h2 {
+    font-size: 3rem;
+    padding: .1rem;
+    text-justify: newspaper ;
+}
+
+.side-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    width: 281vw;
+    overflow-y:scroll;
+    
+}
+
+.side-content img{
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+}
+
+.side-content h4{
+    font-size: 2rem;
+    
+    text-justify: newspaper;
+    text-align: center;
+}
+
+.side-content p {
+    text-align: center;
+}
+
+main{
+    display: flex;
+}
+   

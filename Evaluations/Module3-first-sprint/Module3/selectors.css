@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: black;
+    background-color: rebeccapurple;
+}
+
+.container{
+    outline: .2rem solid white;
+    width : 80vw;
+    margin: 10vw;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.items{
+ background-color: beige;
+ border: 0.1rem solid black;
+ border-radius: 5px;
+margin: .2rem;
+padding: .4rem;
+}
+
+.items:nth-of-type(2n){
+    background-color: bisque;
+}
+
+.items p:last-of-type{
+    font-style: italic;
+}
+
+article p:first-of-type{
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
