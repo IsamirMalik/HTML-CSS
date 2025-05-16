@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            border: 2px solid gray;
+            background-color: beige;
+            margin: 1rem;
+            padding: .7rem;
+        }
+        button{
+            margin-left: 1.5rem;
+        }
+    </style>
+    <title>DOM-manipulation</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1> Item-Lister</h1>
+
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+        </ul>
+        <input type="text" id="input">
+        <button >Add Item</button>
+    </div>
+
+    <script>
+
+        let list = document.querySelector('ul')
+        let input = document.getElementById('input')
+        let btn = document.querySelector('button')
+
+        btn.addEventListener('click',()=>{
+            const value = input.value;
+            const item = document.createElement('li')
+            item.innerText = value;
+            list.appendChild(item);
+            input.value = "";
+
+        })
+    </script>
+    
+</body>
+</html>

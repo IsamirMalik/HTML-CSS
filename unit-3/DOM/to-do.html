@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            border: 2px solid gray;
+            background-color: beige;
+            margin: 1rem;
+            padding: .7rem;
+        }
+        button{
+            margin-left: 1.5rem;
+        }
+    </style>
+    <title>DOM-manipulation</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1> To Do</h1>
+
+        <ul>
+            <li>item-1
+                <button class="completed">x</button>
+            </li>
+            <li>item-2
+             <button class="completed">x</button>
+            </li>
+            <li>item-3
+                 <button class="completed">x</button>
+            </li>
+        </ul>
+        <input type="text" id="input">
+        <button id="add-task" >Add Tsk</button>
+    </div>
+
+    <script>
+
+        let list = document.querySelector('ul')
+        let input = document.getElementById('input')
+        let btn = document.getElementById('add-task')
+
+        btn.addEventListener('click',()=>{
+
+            if (input.value == ""){
+                alert('please enter a task')
+            } else {
+            const value = input.value;
+            const item = document.createElement('li')
+            item.innerText = value;
+            
+            const delBtn = document.createElement('button');
+            delBtn.innerText = 'x';
+
+            list.appendChild(item);
+            item.appendChild(delBtn);
+
+            input.value = "";
+            }
+        });
+
+        
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color and Text Update</title>
+</head>
+<body>
+    <input type="text" id="colorInput" placeholder="Enter color name"><br><br>
+    <input type="text" id="textInput" placeholder="Enter text content"><br><br>
+    <button id="changeBgBtn">Change Background</button><br><br>
+    <button id="updateTextBtn">Update Text</button><br><br>
+    <div id="contentDiv" style="width: 80%; height: 150px; border: 1px solid #000; margin: 2rem auto; padding: 10px;">Initial text content</div>
+
+    <script>
+        
+        const btn = document.getElementById('changeBgBtn');
+        
+        btn.addEventListener('click',()=>{
+            const color = document.getElementById('colorInput').value;
+            const div = document.getElementById('contentDiv');div.style.backgroundColor = color;
+            
+        });
+
+    
+        const text = document.getElementById('updateTextBtn')
+        text.addEventListener('click',()=>{
+            const text = document.getElementById('textInput').value;
+            const div = document.getElementById('contentDiv');
+             div.textContent = text;
+            
+        });
+
+    </script>
+</body>
+</html>

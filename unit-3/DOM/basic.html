@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            border: 2px solid gray;
+            margin: auto;
+            padding : 1rem;
+            
+        }
+        body{
+            background-color: beige;
+        }
+    </style>
+    <title>Document Object Model</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 id="heading"> This is Heading H1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, illo!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorem officia alias, earum quam est. Aliquid quo et sapiente ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor temporibus quis nam quae cumque sint porro ratione eos illo! Vel veritatis pariatur temporibus in ad minima esse rerum architecto eum!</p>
+    </div>
+
+
+    <script>
+
+        let heading = document.getElementById('heading')
+        heading.innerText = 'Welcome to the DOM';
+
+        const para = document.getElementsByTagName('p')
+        for ( let i = 0 ; i < para.length ; i++){
+            para[i].style.color = "blue";
+        }
+
+        let div = document.querySelector('div')
+        div.style.backgroundColor = 'yellow'
+
+        
+    </script>
+    
+</body>
+</html>
